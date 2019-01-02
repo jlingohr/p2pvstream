@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discovered Files</title>
+</head>
+<body>
+<h2>Discovered files:</h2>
+<ul>
+{{range .Filenames}}
+
+    <li><a href="/initStream/{{.}}/">{{.}}</a></li>
+
+{{end}}
+</ul>
+<h4>Click on a filename to start streaming</h4>
+<br><br><br>
+<a href="/">Refresh</a>
+</body>
+</html>
